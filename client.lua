@@ -11,7 +11,7 @@ Citizen.CreateThread(function()
 end)
 
 		
-QBCore 						= nil	
+QBC
 local PlayerData            = {}	
 local YachtHeist 			= {}	
 local Goons 				= {}	
