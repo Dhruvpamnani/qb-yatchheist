@@ -4,13 +4,6 @@ local QBCore = exports['qb-core']:GetCoreObject()
 
 local HeistTimer = {}
 
-TriggerEvent('QBCore:getSharedObject', function(obj) QBCore = obj end)
-
-local QBCore 				= nil
-
-
-TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
-
 local YachtHeist 		= Config.Yacht
 
 AddEventHandler('QBCore:Client:OnPlayerLoaded', function(source)
