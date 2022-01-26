@@ -11,7 +11,6 @@ Citizen.CreateThread(function()
 end)
 
 		
-QBC
 local PlayerData            = {}	
 local YachtHeist 			= {}	
 local Goons 				= {}	
