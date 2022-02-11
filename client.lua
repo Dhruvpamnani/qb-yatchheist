@@ -369,7 +369,7 @@ Citizen.CreateThread(function()
                         end
 					else
                         if GetDistanceBetweenCoords(coords.x, coords.y, coords.z, v.vaultDoor[1], v.vaultDoor[2], v.vaultDoor[3], true) <= 2.0 then
-                              if v.started == true and (PlayerJob.name == "police") then
+                              if v.started == true and (PlayerData.Job.Name == "police") then
 								DrawText3Ds(v.keypad[1], v.keypad[2], v.keypad[3], "Press ~g~[E]~s~ to ~y~Secure Vault~s~")
 							end	
                         end
@@ -387,7 +387,7 @@ Citizen.CreateThread(function()
 				if v.started == true then		
 					if IsControlJustPressed(0,38) and v.vaultLocked == false then
 						-- if (PlayerJob.name == "police" or PlayerJob.name == "police1") or PlayerJob.name == "police2") or PlayerJob.name == "police3") or PlayerJob.name == "police4") or PlayerJob.name == "police5") or PlayerJob.name == "police6") or PlayerJob.name == "police7") or PlayerJob.name == "police8") then	
-						if (PlayerJob.name == "police") then
+						if (PlayerData.Job.Name == "police") then
 							PoliceSecureEvent(k,v)	
 						end	
 						break;
